@@ -1,12 +1,11 @@
-import 'package:checkout_payments/Features/checkout/presentation/views/widgets/cart_info_item.dart';
 import 'package:checkout_payments/Features/checkout/presentation/views/widgets/info_section.dart';
-import 'package:checkout_payments/Features/checkout/presentation/views/widgets/taoal_price_widget.dart';
 import 'package:checkout_payments/core/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/widgets/custom_app_bar.dart';
 import '../../../../../core/widgets/custom_botton.dart';
+import '../payment_details.dart';
 
 class MyCartViewBody extends StatelessWidget {
   const MyCartViewBody({super.key});
@@ -29,13 +28,18 @@ class MyCartViewBody extends StatelessWidget {
               CustomButton(
                 text: 'Complete Payment',
                 onTap: () {
-                  showModalBottomSheet(
-                      context: context,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(16)),
-                      builder: (context) {
-                        return SizedBox();
-                      });
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => PaymentDetails(),
+                      ));
+                  // showModalBottomSheet(
+                  //     context: context,
+                  //     shape: RoundedRectangleBorder(
+                  //         borderRadius: BorderRadius.circular(16)),
+                  //     builder: (context) {
+                  //       return SizedBox();
+                  //     });
                 },
               ),
             ],
