@@ -13,7 +13,7 @@ class MyCartViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(title: "My Cart"),
+      appBar: buildAppBar(title: "My Cart", context: context),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.0.r),
         child: SingleChildScrollView(

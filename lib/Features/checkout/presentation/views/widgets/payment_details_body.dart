@@ -1,3 +1,4 @@
+import 'package:checkout_payments/Features/checkout/presentation/views/thank_you_view.dart';
 import 'package:checkout_payments/Features/checkout/presentation/views/widgets/payment_items_list.dart';
 import 'package:checkout_payments/core/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class _PaymentDetailsViewBodyState extends State<PaymentDetailsViewBody> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(title: "Payment Details"),
+      appBar: buildAppBar(title: "Payment Details", context: context),
       body: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
@@ -46,6 +47,11 @@ class _PaymentDetailsViewBodyState extends State<PaymentDetailsViewBody> {
                       if (formKey.currentState!.validate()) {
                         formKey.currentState!.save();
                       } else {
+                          Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ThankYouView(),
+                      ));
                         autovalidateMode = AutovalidateMode.always;
                       }
                     },
