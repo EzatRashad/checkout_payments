@@ -19,7 +19,7 @@ class _PaymentItemsListState extends State<PaymentItemsList> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:   EdgeInsets.symmetric(horizontal: 11.0.r),
+      padding: EdgeInsets.symmetric(horizontal: 11.0.r),
       child: SizedBox(
         height: 60.h,
         child: ListView.builder(

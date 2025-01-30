@@ -1,11 +1,11 @@
 import 'package:awesome_icons/awesome_icons.dart';
 import 'package:checkout_payments/Features/checkout/presentation/views/widgets/card_info_widget.dart';
- 
+
 import 'package:checkout_payments/Features/checkout/presentation/views/widgets/cart_info_item.dart';
 import 'package:checkout_payments/core/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
- 
+
 import '../../../../../core/utils/styles.dart';
 import 'taoal_price_widget.dart';
 
@@ -28,7 +28,7 @@ class ThankYouCard extends StatelessWidget {
         padding: const EdgeInsets.only(top: 50 + 16, left: 22, right: 22),
         child: Column(
           children: [
-              Text(
+            Text(
               'Thank you!',
               textAlign: TextAlign.center,
               style: Styles.style25,
@@ -39,32 +39,32 @@ class ThankYouCard extends StatelessWidget {
               style: Styles.style20,
             ),
             42.ph,
-              OrderInfoItem(
+            OrderInfoItem(
               title: 'Date',
               value: '01/24/2023',
             ),
             20.ph,
-              OrderInfoItem(
+            OrderInfoItem(
               title: 'Time',
               value: '10:15 AM',
             ),
             20.ph,
-              OrderInfoItem(
+            OrderInfoItem(
               title: 'To',
               value: 'Sam Louis',
             ),
             const Divider(
-              height: 60,
+              height: 50,
               thickness: 2,
             ),
             const TotalPrice(title: 'Total', value: r'$50.97'),
-            30.ph,
+            20.ph,
             const CardInfoWidget(),
             const Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                 Icon(
+                Icon(
                   FontAwesomeIcons.barcode,
                   size: 64.sp,
                 ),
@@ -73,8 +73,7 @@ class ThankYouCard extends StatelessWidget {
                   height: 58.h,
                   decoration: ShapeDecoration(
                     shape: RoundedRectangleBorder(
-                      side:   BorderSide(
-                          width: 1.50.w, color: Color(0xFF34A853)),
+                      side: BorderSide(width: 1.50.w, color: Color(0xFF34A853)),
                       borderRadius: BorderRadius.circular(15),
                     ),
                   ),

@@ -28,13 +28,17 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  awesome_icons: ^1.1.0
-  cupertino_icons: ^1.0.8
+  awesome_icons:  
+  cupertino_icons:  
+  dartz: 
+  dio:  
   flutter:
     sdk: flutter
-  flutter_credit_card: ^4.0.1
-  flutter_screenutil: ^5.9.3
-  flutter_svg: ^2.0.17
+  flutter_bloc:  
+
+  flutter_screenutil:  
+  flutter_stripe:  
+  flutter_svg:  
 
 dev_dependencies:
   flutter_lints: ^5.0.0

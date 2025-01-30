@@ -10,8 +10,8 @@ class CardInfoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 305,
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 22),
+      width: 320,
+      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 2),
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: RoundedRectangleBorder(
@@ -21,7 +21,7 @@ class CardInfoWidget extends StatelessWidget {
       child: Row(
         children: [
           SvgPicture.asset('assets/images/master_card.svg'),
-          5.pw,
+       
           Text.rich(
             TextSpan(
               children: [
@@ -29,7 +29,7 @@ class CardInfoWidget extends StatelessWidget {
                   text: 'Credit Card',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 18,
+                    fontSize: 15,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w400,
                     height: 0,
@@ -39,7 +39,7 @@ class CardInfoWidget extends StatelessWidget {
                   text: 'Mastercard **78',
                   style: TextStyle(
                     color: Colors.black.withOpacity(0.699999988079071),
-                    fontSize: 16,
+                    fontSize: 10,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w400,
                     height: 0,
