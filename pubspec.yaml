@@ -35,7 +35,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc:  
-
+  flutter_paypal_payment:
   flutter_screenutil:  
   flutter_stripe:  
   flutter_svg:  

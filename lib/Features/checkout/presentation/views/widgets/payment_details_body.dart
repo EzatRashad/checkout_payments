@@ -26,7 +26,9 @@ class _PaymentDetailsViewBodyState extends State<PaymentDetailsViewBody> {
       body: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
-            child: PaymentItemsList(),
+            child: PaymentItemsList(updatePaymentMethod: ({required index}) {
+              
+            },),
           ),
           SliverToBoxAdapter(
             child: CustomCreditCard(

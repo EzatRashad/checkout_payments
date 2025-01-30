@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PaymentItemsList extends StatefulWidget {
-  const PaymentItemsList({super.key});
+  const PaymentItemsList({super.key, required this.updatePaymentMethod});
+  final Function({required int index}) updatePaymentMethod;
 
   @override
   State<PaymentItemsList> createState() => _PaymentItemsListState();
@@ -30,7 +31,9 @@ class _PaymentItemsListState extends State<PaymentItemsList> {
             child: GestureDetector(
               onTap: () {
                 setState(() {
-                  activeIndex = index;
+activeIndex = index;
+                  setState(() {});
+                  widget.updatePaymentMethod(index: activeIndex);
                 });
               },
               child: PayMentItem(

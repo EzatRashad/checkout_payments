@@ -1,5 +1,4 @@
 import 'package:checkout_payments/core/utils/utils.dart';
-import 'package:checkout_payments/core/widgets/custom_botton.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_button_bloc_consumer.dart';
@@ -34,7 +33,7 @@ class _PaymentMethodsBottomSheetState extends State<PaymentMethodsBottomSheet> {
         mainAxisSize: MainAxisSize.min,
         children: [
           16.ph,
-          PaymentItemsList(),
+          PaymentItemsList(updatePaymentMethod: updatePaymentMethod,),
           32.ph,
           CustomButtonBlocConsumer(isPaypal: isPaypal,),
         ],
